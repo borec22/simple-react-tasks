@@ -1,3 +1,19 @@
-.someClass {
+.affairs {
 
 }
+.red {
+   color: red;
+}
+.orange {
+   color: orange;
+}
+.green {
+   color: green;
+}
+.button {
+   display: block;
+}
+.button:hover {
+   color: red;
+}
+
