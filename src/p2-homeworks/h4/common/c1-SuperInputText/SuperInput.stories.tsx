@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import SuperInputText from './SuperInputText';
-import {Story} from '@storybook/react/types-6-0';
-
+import { Story } from '@storybook/react';
 export default {
    title: 'form/SuperInput',
    component: SuperInputText

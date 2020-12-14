@@ -1,4 +1,5 @@
 import React from "react";
+import avatarka from '../../assets/avatarka.jpg';
 import {Message} from './Message';
 
 export type MessageType = {
@@ -9,7 +10,7 @@ export type MessageType = {
 }
 
 const messageData: MessageType = {
-    avatar: "https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg",
+    avatar: avatarka,
     name: "Some Name",
     message: "some text",
     time: "22:00",
