@@ -11,9 +11,6 @@
    color: green;
 }
 .button {
-   display: block;
-}
-.button:hover {
-   color: red;
+   margin: 10px 5px 10px 0;
 }
 
