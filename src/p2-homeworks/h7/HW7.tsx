@@ -5,7 +5,7 @@ import SuperRadio from "./common/c6-SuperRadio/SuperRadio";
 const arr = ["x", "y", "z"];
 
 function HW7() {
-    const [value, onChangeOption] = useState(arr[1]);
+    const [value, onChangeOption] = useState(arr[0]);
 
     return (
         <div>
@@ -18,6 +18,7 @@ function HW7() {
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
+                    style={{margin: '15px 0'}}
                 />
             </div>
             <div>
@@ -26,6 +27,7 @@ function HW7() {
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
+                    style={{margin: '15px 0'}}
                 />
             </div>
 

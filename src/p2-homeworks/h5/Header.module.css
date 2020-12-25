@@ -1,6 +1,5 @@
 :root {
    font-size: 16px;
-   font-family: 'Open Sans';
    --text-primary: #b6b6b6;
    --text-secondary: #ececec;
    --text-success: #00ff00;
@@ -29,10 +28,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar {
-   position: absolute;
+   position: fixed;
    background-color: var(--bg-primary);
    transition: width 600ms ease;
-   overflow: scroll;
+   overflow-x: hidden;
+   overflow-y: scroll;
    z-index: 0;
 }
 
@@ -85,7 +85,8 @@ body::-webkit-scrollbar-thumb {
    .navbar {
       bottom: 0;
       width: 100vw;
-      height: 5rem;
+      height: 4rem;
+      position: fixed;
    }
 
    .navbarNav {
@@ -102,11 +103,11 @@ body::-webkit-scrollbar-thumb {
    .navbar {
       top: 0;
       width: 5rem;
-      height: 100vh;
+      height: 100%;
    }
 
    .navbar:hover {
-      width: 16rem;
+      width: 13rem;
    }
 
    .navbar:hover .linkText {
