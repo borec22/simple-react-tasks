@@ -1,10 +1,8 @@
 import React, {ChangeEvent, useState} from 'react';
 import s from './HW8.module.css';
-import {BsArrowUp} from 'react-icons/bs';
-import {BsArrowDown} from 'react-icons/bs';
+import {BsArrowDown, BsArrowUp} from 'react-icons/bs';
 
 import {checkWhoReachCurrentAge, homeWorkReducer, sort} from './bll/homeWorkReducer';
-import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 import SuperCheckbox from '../h4/common/c3-SuperCheckbox/SuperCheckbox';
 import SuperEditableSpan from '../h6/common/c4-SuperEditableSpan/SuperEditableSpan';
 
@@ -12,6 +10,10 @@ export type People = {
    _id: number,
    name: string,
    age: number,
+}
+type SortedType = {
+   up: boolean,
+   down: boolean
 }
 
 const initialPeople: People[] = [
@@ -22,11 +24,6 @@ const initialPeople: People[] = [
    {_id: 4, name: 'Дмитрий', age: 40},
    {_id: 5, name: 'Ирина', age: 55},
 ]
-
-type SortedType = {
-   up: boolean,
-   down: boolean
-}
 
 function HW8() {
    const [people, setPeople] = useState(initialPeople);

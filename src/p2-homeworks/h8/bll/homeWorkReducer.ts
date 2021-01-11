@@ -1,23 +1,28 @@
 import {People} from '../HW8';
 
-const SORT = 'SORT-HOME-WORK-REDUCER';
-const CHECK = 'CHECK-HOME-WORK-REDUCER';
+/*const SORT = 'SORT-HOME-WORK-REDUCER';
+const CHECK = 'CHECK-HOME-WORK-REDUCER';*/
 
-type actionsType = ReturnType<typeof sort> | ReturnType<typeof checkWhoReachCurrentAge>;
+export enum ACTIONS_TYPE {
+   SORT = 'SORT-HOME-WORK-REDUCER',
+   CHECK = 'CHECK-HOME-WORK-REDUCER'
+}
 
-export const homeWorkReducer = (state: People[], action: actionsType): People[] => {
+type actionsHomeWorkReducerType = ReturnType<typeof sort> | ReturnType<typeof checkWhoReachCurrentAge>;
+
+export const homeWorkReducer = (state: People[], action: actionsHomeWorkReducerType): People[] => {
    switch (action.type) {
-      case SORT: {
+      case ACTIONS_TYPE.SORT: {
          return [...state].sort((a, b) => {
             let nameA = a.name.toLowerCase();
             let nameB = b.name.toLowerCase();
 
             if (nameA > nameB) {
-               if (action.payload === 'up') return  1;
+               if (action.payload === 'up') return 1;
 
                return -1
             } else if (nameA < nameB) {
-               if (action.payload === 'up') return  -1;
+               if (action.payload === 'up') return -1;
 
                return 1;
             }
@@ -25,7 +30,7 @@ export const homeWorkReducer = (state: People[], action: actionsType): People[] 
             return 0;
          });
       }
-      case CHECK: {
+      case ACTIONS_TYPE.CHECK: {
          return state.filter(people => people.age >= action.payload);
       }
       default:
@@ -33,5 +38,5 @@ export const homeWorkReducer = (state: People[], action: actionsType): People[] 
    }
 };
 
-export let sort = (typeOfSort: 'up' | 'down') => ({type: SORT, payload: typeOfSort}) as const;
-export let checkWhoReachCurrentAge = (age: number) => ({type: CHECK, payload: age}) as const;
+export let sort = (typeOfSort: 'up' | 'down') => ({type: ACTIONS_TYPE.SORT, payload: typeOfSort}) as const;
+export let checkWhoReachCurrentAge = (age: number) => ({type: ACTIONS_TYPE.CHECK, payload: age}) as const;
