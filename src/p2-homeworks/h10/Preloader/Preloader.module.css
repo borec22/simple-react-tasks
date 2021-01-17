@@ -1,3 +1,10 @@
+.loaderContainer {
+   display: flex;
+}
+.textLoading {
+   margin-top: 37px;
+   margin-left: 5px;
+}
 .ldsHourglass {
    margin: 10px 0;
    display: inline-block;
