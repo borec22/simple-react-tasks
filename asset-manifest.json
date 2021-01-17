@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/simple-react-tasks/static/css/main.cd2703c5.chunk.css",
-    "main.js": "/simple-react-tasks/static/js/main.6e581d0b.chunk.js",
-    "main.js.map": "/simple-react-tasks/static/js/main.6e581d0b.chunk.js.map",
+    "main.js": "/simple-react-tasks/static/js/main.a8247c8b.chunk.js",
+    "main.js.map": "/simple-react-tasks/static/js/main.a8247c8b.chunk.js.map",
     "runtime-main.js": "/simple-react-tasks/static/js/runtime-main.bad636bd.js",
     "runtime-main.js.map": "/simple-react-tasks/static/js/runtime-main.bad636bd.js.map",
     "static/js/2.58c7c70e.chunk.js": "/simple-react-tasks/static/js/2.58c7c70e.chunk.js",
     "static/js/2.58c7c70e.chunk.js.map": "/simple-react-tasks/static/js/2.58c7c70e.chunk.js.map",
     "index.html": "/simple-react-tasks/index.html",
-    "precache-manifest.a9c52726a9e4ad685fd5d5e803f608bc.js": "/simple-react-tasks/precache-manifest.a9c52726a9e4ad685fd5d5e803f608bc.js",
+    "precache-manifest.a90e93bc62e5d77544ee091a18bbb7de.js": "/simple-react-tasks/precache-manifest.a90e93bc62e5d77544ee091a18bbb7de.js",
     "service-worker.js": "/simple-react-tasks/service-worker.js",
     "static/css/main.cd2703c5.chunk.css.map": "/simple-react-tasks/static/css/main.cd2703c5.chunk.css.map",
     "static/js/2.58c7c70e.chunk.js.LICENSE.txt": "/simple-react-tasks/static/js/2.58c7c70e.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.bad636bd.js",
     "static/js/2.58c7c70e.chunk.js",
     "static/css/main.cd2703c5.chunk.css",
-    "static/js/main.6e581d0b.chunk.js"
+    "static/js/main.a8247c8b.chunk.js"
   ]
 }
