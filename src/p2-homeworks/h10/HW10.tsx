@@ -1,38 +1,51 @@
-import React from "react";
-import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import React from 'react';
+import classes from './HW10.module.css';
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
+import {loadingAC, useDispatch} from './bll/loadingReducer';
+import {useSelector} from 'react-redux';
+import {AppStoreType} from './bll/store';
+import {selectIsLoading} from './bll/selectors';
+import {Preloader} from './Preloader/Preloader';
 
 function HW10() {
-    // useSelector, useDispatch
-    const loading = false;
+   // useSelector, useDispatch
+   // const loading = false;
 
-    const setLoading = () => {
-        // dispatch
-        // setTimeout
-        console.log("loading...");
-    };
+   const dispatch = useDispatch();
+   const isLoading = useSelector<AppStoreType, boolean>(selectIsLoading);
 
-    return (
-        <div>
-            <hr/>
-            homeworks 10
+   const setLoading = () => {
+      dispatch(loadingAC(true));
 
-            {/*should work (должно работать)*/}
-            {loading
-                ? (
-                    <div>крутилка...</div>
-                ) : (
-                    <div>
-                        <SuperButton onClick={setLoading}>set loading...</SuperButton>
-                    </div>
-                )
-            }
+      setTimeout(() => {
+         dispatch(loadingAC(false))
+      }, 2000);
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<Alternative/>*/}
-            <hr/>
-        </div>
-    );
+      console.log('loading...');
+   };
+
+   return (
+      <div>
+         <hr/>
+         <h3 className={classes.title}>homeworks 10</h3>
+         {/*should work (должно работать)*/}
+         {isLoading
+            ? (
+               <Preloader/>
+            ) : (
+               <div>
+                  <SuperButton onClick={setLoading} variant='primary' size='medium' className={classes.startLoadingBtn}>set
+                     loading...</SuperButton>
+               </div>
+            )
+         }
+
+         <hr/>
+         {/*для личного творчества, могу проверить*/}
+         {/*<Alternative/>*/}
+         <hr/>
+      </div>
+   );
 }
 
 export default HW10;
