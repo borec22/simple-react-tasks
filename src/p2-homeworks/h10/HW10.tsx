@@ -20,9 +20,6 @@ function HW10() {
       setTimeout(() => {
          dispatch(loadingAC(false))
       }, 2000);
-
-      console.log('dfdfdfdfjdfvnffbfbb');
-      console.log('добавив якусь нову можливість - фічу')
    };
 
    return (
