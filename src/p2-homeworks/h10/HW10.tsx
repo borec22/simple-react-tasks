@@ -21,7 +21,8 @@ function HW10() {
          dispatch(loadingAC(false))
       }, 2000);
 
-      console.log('loading...');
+      console.log('dfdfdfdfjdfvnffbfbb');
+      console.log('добавив якусь нову можливість - фічу')
    };
 
    return (
