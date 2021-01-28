@@ -8,9 +8,6 @@ import {selectIsLoading} from './bll/selectors';
 import {Preloader} from './Preloader/Preloader';
 
 function HW10() {
-   // useSelector, useDispatch
-   // const loading = false;
-
    const dispatch = useDispatch();
    const isLoading = useSelector<AppStoreType, boolean>(selectIsLoading);
 

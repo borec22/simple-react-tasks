@@ -1,0 +1,40 @@
+.currentValue {
+   width: 60%;
+}
+
+.currentValue input {
+   font-size: 16px;
+
+   max-width: 40px;
+   margin: 0;
+   margin-bottom: 5px;
+   padding: 5px;
+   padding-left: 15px;
+
+   color: white;
+   border: none;
+   border-radius: 20px;
+   background: #274684;
+}
+
+.currentValue label {
+   font-size: 20px;
+
+   display: inline-flex;
+
+   width: 50px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+input[type="number"] {
+   -moz-appearance: textfield;
+}
+
+*:focus{
+   outline: none;
+   box-shadow: 0 0 0 2px #709fdc;
+}
