@@ -1,10 +1,11 @@
 import React from 'react';
 import s from './Routes.module.css';
-import {Switch, Route, Redirect} from 'react-router-dom';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import PreJunior from './pages/PreJunior';
 import Error404 from './pages/Error404';
 import Junior from './pages/Junior';
 import JuniorPlus from './pages/JuniorPlus';
+import {withTheme} from '../../hocs/withTheme';
 
 export const PATH = {
    PRE_JUNIOR: '/pre-junior',
@@ -13,8 +14,9 @@ export const PATH = {
 }
 
 function Routes() {
+
    return (
-      <div className={s.main}>
+      <div className={`${s.main}`}>
          {/*Switch выбирает первый подходящий роут*/}
          <Switch>
 
@@ -35,4 +37,4 @@ function Routes() {
    );
 }
 
-export default Routes;
+export default withTheme(Routes);

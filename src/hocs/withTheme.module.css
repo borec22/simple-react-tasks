@@ -1,0 +1,43 @@
+.dark {
+   background: dimgrey;
+}
+
+.dark-text {
+   color: aliceblue;
+}
+
+.red {
+   background: lightcoral;
+}
+
+.red-text {
+   color: aqua;
+}
+
+.some {
+   background: lightgreen;
+}
+
+.some-text {
+   color: darkslateblue;
+}
+
+.blue {
+   background-color: #1ea7fd;
+}
+
+.blue-text {
+   color: white;
+}
+
+.yellow {
+   background-color: goldenrod;
+}
+
+.yellow-text {
+   color: white;
+}
+
+.selectTheme {
+   padding-left: 20px;
+}
