@@ -1,7 +1,7 @@
 import React from 'react';
 import {makeStyles, Slider} from '@material-ui/core';
 
-type SuperDoubleRangePropsType = {
+export type SuperDoubleRangePropsType = {
    onChangeRange?: (value: Array<number>) => void
    value?: [number, number]
    min: number
@@ -15,7 +15,6 @@ const useStyles = makeStyles({
       width: 300,
    },
 });
-
 const marks = [
    {
       value: 0,

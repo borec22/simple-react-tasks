@@ -3,7 +3,7 @@ import s from './SuperSelect.module.css';
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
 
-type SuperSelectPropsType = DefaultSelectPropsType & {
+export type SuperSelectPropsType = DefaultSelectPropsType & {
    options?: any[]
    onChangeOption?: (option: any) => void
 }
